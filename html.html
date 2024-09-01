@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+        /* Asegúrate de que el iframe no sea visible */
+        #player {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="player"></div>
+    
+    <div class="mobile">Open in desktop</div>
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <h1>Feliz Cumpleaños Bebe!</h1>
+    <h2>Happy Birthday Mi Niña!</h2>
+    <span>🎉</span>
+    <div class="candle">
+        <div id="flame" class="lit"></div>
+    </div>
+
+    <div class="cake"></div>
+    <div class="plate"></div>
+
+    <script>
+        // Esta función se llama cuando la API de YouTube está lista
+        function onYouTubeIframeAPIReady() {
+            new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'HqlZeSeHQOQ',
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 0,
+                    'rel': 0,
+                    'showinfo': 0,
+                    'mute': 0
+                }
+            });
+        }
+    </script>
+</body>
+</html>
